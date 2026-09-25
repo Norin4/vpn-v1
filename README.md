@@ -35,3 +35,9 @@ norin4.github.io/vpn-v1/), or every asset 404s and the page is blank. Deep links
 ## Photo credits
 Use-case photos (`use-*.jpg`) are from Unsplash under the Unsplash License (free commercial use,
 no attribution required): photo-1519336305162, photo-1543754845, photo-1585577517704.
+
+## app-ads.txt
+`public/app-ads.txt` is the CAS (Clever Ads Solutions) list, served at https://fastvpn.buzz/app-ads.txt.
+The deploy workflow re-downloads the latest version from
+github.com/cleveradssolutions/App-ads.txt on every push and once a day (cron), falling back to the
+committed copy if the download fails. Don't edit it by hand.

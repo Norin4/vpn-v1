@@ -3,6 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # daily rebuild so /app-ads.txt follows the ad network's latest list
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -30,6 +34,15 @@ jobs:
       - run: pnpm install --no-frozen-lockfile
       - run: pnpm run build
       - run: cp dist/index.html dist/404.html
+      # CAS (Clever Ads Solutions) app-ads.txt: take the live list; keep the committed copy if the fetch fails
+      - name: Refresh app-ads.txt
+        run: |
+          if curl -fsSL --retry 3 -o /tmp/app-ads.txt https://raw.githubusercontent.com/cleveradssolutions/App-ads.txt/master/app-ads.txt \
+             && grep -q "DIRECT" /tmp/app-ads.txt; then
+            cp /tmp/app-ads.txt dist/app-ads.txt && echo "app-ads.txt refreshed ($(wc -l < dist/app-ads.txt) lines)"
+          else
+            echo "::warning::Could not fetch app-ads.txt, using the committed copy"
+          fi
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
