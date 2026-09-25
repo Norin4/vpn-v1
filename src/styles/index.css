@@ -860,3 +860,9 @@ em.i, .i {
   .glance__card span { font-size: max(19rem, 14px); }
 }
 @media (max-width: 767px) { .lsec__text { padding-left: 0; } }
+
+/* feature deck: opacity instead of a dark veil, softer shadows */
+.fstack__card::after { content: none; }
+.fstack__card { box-shadow: -16px 0 36px rgba(4,3,3,.05), 0 1px 0 rgba(4,3,3,.03); }
+.fstack__media img { filter: drop-shadow(0 16px 24px rgba(4,3,3,.10)); }
+.fstack__card--photo .fstack__media img { filter: none; }

@@ -56,7 +56,8 @@ export default function FeatureStack({ slides }: { slides: Slide[] }) {
                 k === 0 || enter >= 1
                   ? `translateX(${-6 * under}%) scale(${1 - 0.08 * under})`
                   : `translateX(${(1 - enter) * 104}%)`,
-              ["--dim" as string]: under * 0.55,
+              // fade instead of darkening; cards two layers deep disappear so they don't bleed through
+              opacity: p - k <= 1 ? 1 - 0.5 * under : Math.max(0, 0.5 - (p - k - 1)),
               visibility: k > 0 && enter <= 0 ? "hidden" : "visible",
             } as CSSProperties;
             return (
