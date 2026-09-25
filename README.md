@@ -7,7 +7,7 @@ Cormorant Garamond italic accents, rounded overlapping panels, marquees, char‑
 
 ```bash
 pnpm install
-pnpm dev        # http://localhost:5173/vpn-v1/
+pnpm dev        # http://localhost:5173
 pnpm build      # → dist/
 ```
 
@@ -28,9 +28,9 @@ pnpm build      # → dist/
 `.github/workflows/deploy.yml` builds on push to `main` and copies `index.html` → `404.html`
 for client‑side routing. In the repo: Settings → Pages → Source: **GitHub Actions**.
 
-Live at **https://norin4.github.io/vpn-v1/** — `vite.config.ts` has `base: '/vpn-v1/'`.
-When a custom domain is attached: switch `base` to `'/'` **and** add `public/CNAME` with the
-bare domain in the same commit, or every asset 404s and the page is blank. Deep links return HTTP 404 on Pages (fine for people, not for crawlers).
+Live at **https://fastvpn.buzz** — `base: '/'` with `public/CNAME` = `fastvpn.buzz`.
+If the domain is ever removed, `base` must go back to `'/vpn-v1/'` (site then lives at
+norin4.github.io/vpn-v1/), or every asset 404s and the page is blank. Deep links return HTTP 404 on Pages (fine for people, not for crawlers).
 
 ## Photo credits
 Use-case photos (`use-*.jpg`) are from Unsplash under the Unsplash License (free commercial use,

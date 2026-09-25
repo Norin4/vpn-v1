@@ -4,10 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  // Served from norin4.github.io/vpn-v1/ (no custom domain yet).
-  // When a domain is attached: set base to "/" AND add public/CNAME in the same commit,
-  // otherwise every asset 404s and the page goes blank.
-  base: "/vpn-v1/",
+  // Custom domain fastvpn.buzz (public/CNAME) → served from the root.
+  // If the domain is ever removed, switch back to "/vpn-v1/" or every asset 404s.
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
 });
