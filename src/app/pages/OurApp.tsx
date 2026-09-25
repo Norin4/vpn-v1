@@ -78,7 +78,6 @@ export default function OurApp() {
               <tbody>
                 {[
                   ["Name", app.name],
-                  ["Version", app.version],
                   ["Compatibility", `iPhone · iOS ${app.minIOS} or later`],
                   ["Size", app.size],
                   ["Category", app.category],

@@ -65,7 +65,7 @@ export const features = [
   {
     tag: "Ad Blocker",
     title: "Block ads and pop‑ups",
-    text: "Switch to the AdBlocker tab to stop banners, pop‑ups and video ads — and see how many you've met today.",
+    text: "Switch to the AdBlocker tab to stop banners, pop‑ups and video ads — and see how many you've run into today.",
     card: "/images/card-adblock.jpg",
     photo: "/images/mock-adblock.jpg",
   },

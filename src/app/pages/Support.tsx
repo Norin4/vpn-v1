@@ -7,12 +7,12 @@ import Btn from "../components/Btn";
 const faq = [
   ["How do I connect?", "Open the app and tap the large power button on the main screen. The first time, iOS asks you to allow the VPN configuration — tap Allow. When the status reads Connected, you're protected."],
   ["How do I choose a server?", "Tap the location card on the main screen to open the Server List. Keep Best Location for the fastest server, or pick any country. Tap the star to add a server to Favorites."],
-  ["Can the VPN connect automatically?", "Yes. Open VPN Features and turn on Auto Connection to connect when the app starts, or Connect On Demand to connect on untrusted networks."],
+  ["Can the VPN connect automatically?", "Yes. Open VPN Features and turn on Auto Connection to connect every time the app starts. Connect On Demand (Trusted Network Connect) lets the VPN connect automatically depending on the network you join."],
   ["How do I block ads?", "Switch to the AdBlocker tab at the bottom of the app and turn the switch on. Banners, pop‑ups and video ads are blocked instantly."],
   ["What do Boost Speed and Optimize For Slow Network do?", "Both live in VPN Features. Boost Speed aims for the fastest connection; Optimize For Slow Network keeps the tunnel stable on weak Wi‑Fi or mobile data."],
   ["How do I remove the VPN profile?", "Open VPN Features and tap Remove Configuration. You can also delete it in iOS Settings → General → VPN & Device Management."],
-  ["How do I manage or cancel my subscription?", "Subscriptions are billed through your Apple ID. Open iOS Settings → your name → Subscriptions, choose Fast VPN and turn off auto‑renewal at least 24 hours before the current period ends."],
-  ["How do I restore a purchase on a new iPhone?", "Sign in with the same Apple ID, open the app and use Restore Purchases on the subscription screen."],
+  ["How do I manage or cancel my subscription?", "Subscriptions are billed through your Apple ID. Open iOS Settings → your name → Subscriptions, choose Super Fast VPN・Unlimited Proxy and turn off auto‑renewal at least 24 hours before the current period ends."],
+  ["How do I restore a purchase on a new iPhone?", "Sign in with the same Apple ID, open the app and use the restore option on the subscription screen — your subscription is tied to your Apple ID, not to the device."],
   ["The connection is slow or drops. What can I do?", "Switch to another server or Best Location, toggle Wi‑Fi or mobile data, and make sure you're on the latest version of the app. If it continues, write to us with your iOS version and the server you used."],
 ];
 

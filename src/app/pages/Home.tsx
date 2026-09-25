@@ -304,7 +304,7 @@ function Dark() {
             {[
               ["1", "tap to connect"],
               [String(app.languages), "languages in the app"],
-              ["0", "logs — zero‑log browsing"],
+              ["0", "browsing logs kept"],
             ].map(([n, t], i) => (
               <Reveal className="stat" key={t} delay={i * 100}>
                 <b>{n}</b>

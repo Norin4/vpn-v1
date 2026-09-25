@@ -159,7 +159,7 @@ export default function LegalPage({ doc }: { doc: Doc }) {
               <div>
                 <span className="eyebrow">Questions about this document?</span>
                 <p>
-                  Write to <a href={`mailto:${site.email}`}>{site.email}</a> — we usually reply within two business days.
+                  Write to <a href={`mailto:${site.email}`}>{site.email}</a> and we'll get back to you.
                 </p>
               </div>
               <Btn to="/contact">Contact us</Btn>

@@ -56,7 +56,7 @@ export default function About() {
           <div className="scheme__cols" style={{ marginTop: 0 }}>
             {[
               ["Simple", "One screen, one button. No settings you have to understand before you're protected."],
-              ["Fast", "Optimised servers and automatic best‑location choice for stable, quick connections."],
+              ["Fast", "Optimized servers and automatic best‑location choice for stable, quick connections."],
               ["Private", "Your IP address is hidden and your traffic encrypted every time you connect."],
             ].map(([h, t], i) => (
               <Reveal line className="scheme__col" key={h} delay={i * 100}>

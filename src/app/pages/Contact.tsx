@@ -23,7 +23,7 @@ export default function Contact() {
               </a>
             </p>
             <p className="muted" style={{ maxWidth: "36ch", marginTop: "24rem" }}>
-              Questions, partnership or press — we usually reply within two business days.
+              Questions, partnership or press — write to us and we'll get back to you.
             </p>
           </Reveal>
           <Reveal delay={100}>
