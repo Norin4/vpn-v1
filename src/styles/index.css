@@ -870,3 +870,5 @@ em.i, .i {
 .fstack__card { box-shadow: 0 28px 40px -28px rgba(16, 30, 78, .16); }
 .fstack__card:first-child { box-shadow: 0 28px 40px -28px rgba(16, 30, 78, .16); }
 .fstack__media img { filter: drop-shadow(0 18px 22px rgba(16, 30, 78, .12)); }
+/* shadow leans a little to the left — the card slides in from the right */
+.fstack__card, .fstack__card:first-child { box-shadow: -14px 28px 40px -28px rgba(16, 30, 78, .16); }
